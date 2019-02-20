@@ -1,0 +1,34 @@
+package com.java.streams.calories;
+
+public class FruitColor {
+	private String name;
+	private int calories;
+	private int price;
+	private String color;
+	public FruitColor(String name, int calories, String color) {
+		super();
+		this.name = name;
+		this.calories = calories;
+		this.color = color;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public int getCalories() {
+		return calories;
+	}
+	
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	@Override
+	public String toString() {
+		return "Fruit [name=" + name + ", calories=" + calories + ", price=" + price + ", color=" + color + "]";
+	}
+	
+}
