@@ -1,12 +1,11 @@
 package com.jdbc.support;
 
 public class Shopping {
-	//private int sno;
 	private String name;
 	private String email;
-	private int password;
+	private String password;
 	private long phone;
-	public Shopping(String name, String email, int password, long phone) {
+	public Shopping(String name, String email, String password, long phone) {
 		super();
 		this.name = name;
 		this.email = email;
@@ -32,10 +31,10 @@ public class Shopping {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getPassword() {
+	public String getPassword() {
 		return password;
 	}
-	public void setPassword(int password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 	public long getphone() {

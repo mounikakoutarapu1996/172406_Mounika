@@ -1,8 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Shopping</title>
-  <meta charset="utf-8">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,7 +32,7 @@
   </style>
     
 </head>
-<body>
+<body bgcolor="blue">
 <div class="jumbotron">
   <div class="container text-left">
     <h1>Flipkart</h1>     
@@ -45,16 +49,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Search</a>
+     
     </div>
       
       <ul class="nav navbar-nav navbar-left">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href=index.html>Home</a></li>
         <li><a href="#">Products</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span>Login </a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="login.jsp"><span class="glyphicon glyphicon-user"></span>Login </a></li>
+        <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
 
@@ -68,7 +72,7 @@
      <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\Redmi 4 pro.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
        <div class="panel-footer">redmi 4 pro</div>
        <div><a href="redmi.html"><button type="submit">ADD TO CART</button></div>
-      <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+      <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
         
       </div>
     </div>
@@ -78,7 +82,7 @@
         <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\Redmi 5A.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
          <div class="panel-footer">redmi 5A</div>
          <div> <a href="redmi 5A.html"><button type="submit">ADD TO CART</button></div>
-         <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+         <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
       
       
       
@@ -90,7 +94,7 @@
         <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\OKWU.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
          <div class="panel-footer">OKWU</div>
           <div><a href="okwu.html"><button type="submit">ADD TO CART</button></div>
-          <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+          <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
       </div>
     </div>
   </div>
@@ -104,7 +108,7 @@
         <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\lenovo.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
          <div class="panel-footer">lenovo</div>
          <div> <a href="lenovo.html"><button type="submit">ADD TO CART</button></div>
-         <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+         <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
       
       
       </div>
@@ -115,7 +119,7 @@
         <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\REDMI Y1.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
          <div class="panel-footer">Redmi Y1</div>
          <div> <a href="redmi y1.html"></a><button type="submit">ADD TO CART</button></div>
-         <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+         <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
       
       
       </div>
@@ -126,7 +130,7 @@
         <div class="panel-body"><img src="C:\Users\mokoutar\Desktop\New folder\Redmi y2.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
          <div class="panel-footer">Redmi y2</div>
          <div> <a href="Redmi y2.html"><button type="submit">ADD TO CART</button></div>
-         <div><a href="login.html"><button type="submit">BUY NOW</button></a></div>
+         <div><a href="login.jsp"><button type="submit">BUY NOW</button></a></div>
    
       </div>
     </div>
@@ -140,6 +144,9 @@
     <button type="button" class="btn btn-danger">Sign Up</button>
   </form>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>

@@ -43,13 +43,13 @@ public class RegisterServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		String name=request.getParameter("name");
 		String email=request.getParameter("email");
-		int password=Integer.parseInt(request.getParameter("psw"));
+		String password=request.getParameter("password");
 		Long phone=Long.parseLong(request.getParameter("phone"));
 		
 		ShoppingDao shopdao=new ShoppingDao();
 		try {
 			shopdao.insert(new Shopping(name,email,password,phone));
-			response.sendRedirect("login.html");
+			response.sendRedirect("login.jsp");
 		}
 		catch(Exception e) {
 			e.printStackTrace();

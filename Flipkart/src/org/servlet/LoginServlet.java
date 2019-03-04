@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.java.Dao.support.ShoppingDao;
 
@@ -40,29 +41,29 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
+		HttpSession session=request.getSession();
 		String name=request.getParameter("name");
 		String password=request.getParameter("password");
 		ShoppingDao res=new ShoppingDao();
-		boolean status=false;
+	     boolean status=true;
 		try {
 			status =res.login(name,password);
-			
-			}
+		}
 			catch (Exception e) {
 	       
 			e.printStackTrace();
 		}
-		if(status=true) {
-			response.sendRedirect("index.html");
-			
+		if(status==true) {
+			response.sendRedirect("index.jsp");
 		}
 		else {
-			response.sendRedirect("login.html");
+			response.sendRedirect("login.jsp");
+		}
 		}
 	
 	}
 
-}
+
 
 
 
