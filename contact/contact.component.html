@@ -1,0 +1,29 @@
+
+      <form (ngSubmit)="onSubmit()" ngNativeValidate>
+          
+              <div class="contact">
+                  <label for="lastname">FirstName</label>
+                  <input type="text" class="form-control" id="fname" required [(ngModel)]="user.firstname" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">LastName</label>
+                    <input type="text" class="form-control" id="fname" required [(ngModel)]="user.lastname" name="fname">
+                  </div>
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+          
+                  
+              <div class="form-group">
+                  <label for="subject">subject</label>
+                  <input type="text" class="form-control" id="fname" required [(ngModel)]="user.subject" name="fname" style="height:170px">
+              </div>
+
+     
+      <input type="submit" value="Submit">
+    
+
+
