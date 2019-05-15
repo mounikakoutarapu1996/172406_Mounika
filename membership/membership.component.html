@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" ngNativeValidate>
+  <div class="membership">
+        <label for="membership">Select Your memberShip</label>
+        <select id="membership" name="membership">
+          <option value="premium">premium</option>
+          <option value="Gold">Gold</option>
+          <option value="silver">sliver</option>
+        </select>
+      </div>
+
+
+
+ 
+<!-- REGISTER BUTTON -->
+     <button class="btn btn-primary" [disabled]="!regForm.valid" type="submit">Submit</button>
+
+
+
+    </form>
